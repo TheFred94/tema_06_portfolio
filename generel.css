@@ -1,4 +1,12 @@
 /* GENERELT */
+html {
+  --accent_light_mode_color: #9142ff;
+  --accent_dark_mode_color: #02ec96;
+  --light_mode_gradient: linear-gradient(45deg, #484bb9, #00f89d);
+  --dark_mode_gradient: linear-gradient(45deg, #7f29f7, #c491ff);
+  --primary_dark_mode_color: #454545;
+  --primary_light_mode_color: #e8e8e8;
+}
 * {
   padding: 0;
   margin: 0;
@@ -32,7 +40,7 @@ li {
   margin: 1rem;
 }
 a {
-  color: #454545;
+  color: var(--primary_dark_mode_color);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
@@ -54,7 +62,7 @@ a {
 
 .nav-link:hover {
   transition: 0.7s ease;
-  color: green;
+  color: var(--accent_light_mode_color);
 }
 
 .hamburger {
@@ -69,7 +77,7 @@ a {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: var(--primary_dark_mode_color);
   border-radius: 10px;
 }
 
@@ -93,7 +101,7 @@ a {
     gap: 10px;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(239, 239, 239);
+    background-color: var(--primary_light_mode_color);
     width: 100%;
     height: 25%;
     text-align: center;
@@ -107,11 +115,11 @@ a {
     left: 0;
   }
   header.active {
-    background-color: rgb(239, 239, 239);
+    background-color: var(--primary_light_mode_color);
     transition: 0.7s;
   }
   header.dark .active {
-    background-color: black;
+    background-color: var(--primary_dark_mode_color);
     transition: 0.7s;
   }
   a {
@@ -121,47 +129,40 @@ a {
 
 /* DARK MODE */
 body {
-  background: hsl(255 75% 95%);
-  color: hsl(255 75% 10%);
+  background: white;
+  color: var(--primary_dark_mode_color);
   transition: 1s;
 }
 
 body.dark {
   color: white;
-  background-color: black;
-}
-
-.mode {
-  all: initial;
-  font: inherit;
-  color: inherit;
-
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  cursor: pointer;
-}
-
-.mode {
-  background: hsl(255, 75%, 10%);
-  transition: 1s;
-}
-
-.mode:hover {
-  background: hsl(255, 75%, 25%);
+  background-color: var(--primary_dark_mode_color);
 }
 
 .dark .mode:hover {
-  background: hsl(255, 75%, 65%);
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .dark .mode {
-  background: hsl(255, 75%, 60%);
+  background-image: var(--dark_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
 }
 
 header.dark {
   color: white;
-  background-color: black;
+  background-color: var(--primary_dark_mode_color);
+  transition: 1s;
 }
 
 .dark .hamburger .bar {
@@ -170,4 +171,24 @@ header.dark {
 
 .dark a {
   color: white;
+}
+
+.mode {
+  background-image: var(--light_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+}
+
+.mode:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
