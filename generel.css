@@ -25,6 +25,28 @@ img {
   display: block;
 }
 
+/* FORSIDE */
+.splash {
+  height: 100vh;
+  width: 100%;
+  background-image: url(billeder/DSC09628.jpg);
+  background-size: cover;
+  background-position: 70% 100%;
+  max-width: none;
+  background-repeat: no-repeat;
+}
+
+.forside {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.forside_txt {
+  grid-row: 1 / 3;
+  grid-column: 1 / span 2;
+}
+
 /* FONT */
 h1 {
   font-size: 4rem;
@@ -35,6 +57,10 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: "montserrat";
 }
 
 /* BURGER MENU */
@@ -108,6 +134,10 @@ a {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .navbar {
+    color: var(--primary_light_mode_color);
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -121,20 +151,25 @@ a {
     text-align: center;
     transition: 0.3s;
   }
+
   nav-item {
     margin: 16px 0;
   }
   .nav-menu.active {
     bottom: 0;
     left: 0;
+    color: var(--primary_light_mode_color);
   }
   header.active {
-    background-color: transparent;
+    background-color: var(--primary_light_mode_color);
+    transition: var(--transition_1s);
+  }
+  header.active .dark {
+    background-color: var(--primary_dark_mode_color);
     transition: var(--transition_1s);
   }
   header.dark .active {
-    background-color: transparent;
-    transition: var(--transition_1s);
+    background-color: var(--primary_dark_mode_color);
   }
   a {
     font-size: 2rem;
@@ -153,27 +188,13 @@ body.dark {
   background-color: var(--primary_dark_mode_color);
 }
 
-.dark .mode:hover {
-  background-position: right center;
-  color: white;
-  text-decoration: none;
-}
-
-.dark .mode {
-  background-image: var(--dark_mode_gradient);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 4px;
-  border-style: none;
-  display: block;
-}
-
 header.dark {
+  color: white;
+  background-color: transparent;
+  transition: var(--transition_1s);
+}
+
+header.active.dark {
   color: white;
   background-color: var(--primary_dark_mode_color);
   transition: var(--transition_1s);
@@ -187,37 +208,62 @@ header.dark {
   color: white;
 }
 
+/* skifter fra lilla til grøn */
 .mode {
-  background-image: var(--light_mode_gradient);
+  background: var(--dark_mode_gradient);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
   transition: var(--transition_1s);
   color: white;
   border-radius: 4px;
   border-style: none;
   display: block;
+  cursor: pointer;
 }
 
 .mode:hover {
-  background-position: right center;
+  transition: var(--transition_1s) ease-in-out;
+  background: var(--accent_light_mode_color);
   color: #fff;
   text-decoration: none;
 }
 
+/* Skifter fra grøn til lilla */
+.mode.dark {
+  background: var(--light_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s) ease-in-out;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dark .mode:hover {
+  transition: var(--transition_1s) ease-in-out;
+  background: var(--accent_dark_mode_color);
+  color: white;
+}
+
+/* Skifter farven på h1 ved tryk på Light/dark mode knap */
 .dark h1 {
   font-size: 4rem;
   font-family: "futura";
   text-transform: capitalize;
-  background: var(--light_mode_gradient);
+  background-image: var(--light_mode_gradient);
   font-weight: 800;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.dark .mode:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
 }
