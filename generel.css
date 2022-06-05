@@ -93,7 +93,7 @@ a {
     gap: 10px;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(239, 239, 239);
     width: 100%;
     height: 25%;
     text-align: center;
@@ -107,10 +107,67 @@ a {
     left: 0;
   }
   header.active {
-    background-color: grey;
+    background-color: rgb(239, 239, 239);
+    transition: 0.7s;
+  }
+  header.dark .active {
+    background-color: black;
     transition: 0.7s;
   }
   a {
     font-size: 2rem;
   }
+}
+
+/* DARK MODE */
+body {
+  background: hsl(255 75% 95%);
+  color: hsl(255 75% 10%);
+  transition: 1s;
+}
+
+body.dark {
+  color: white;
+  background-color: black;
+}
+
+.mode {
+  all: initial;
+  font: inherit;
+  color: inherit;
+
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.mode {
+  background: hsl(255, 75%, 10%);
+  transition: 1s;
+}
+
+.mode:hover {
+  background: hsl(255, 75%, 25%);
+}
+
+.dark .mode:hover {
+  background: hsl(255, 75%, 65%);
+}
+
+.dark .mode {
+  background: hsl(255, 75%, 60%);
+}
+
+header.dark {
+  color: white;
+  background-color: black;
+}
+
+.dark .hamburger .bar {
+  background-color: white;
+}
+
+.dark a {
+  color: white;
 }
