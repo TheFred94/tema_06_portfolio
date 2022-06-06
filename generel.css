@@ -69,7 +69,7 @@ img {
 }
 
 /* tema 01 */
-.tema_01_grid {
+.tema_grid {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-columns: repeat(2, 1fr);
@@ -163,6 +163,9 @@ img {
   grid-column: 7 / 9;
   grid-row: 7 / 9;
 }
+.tema_01_txt {
+  grid-column: 1 / 2;
+}
 
 /* TEMA SIDE */
 .tema_01_grid {
@@ -172,7 +175,22 @@ img {
   grid-column: 2 / 3;
   gap: 5px;
 }
-
+.tema_txt_boks_farve {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--accent_light_mode_color);
+  grid-column: 1 / 3;
+  color: var(--primary_light_mode_color);
+}
+.tema_txt_boks_farve h2 {
+  color: var(--primary_light_mode_color);
+}
+.tema_txt_boks_p {
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 2 / 3;
+}
 /* FOOTER */
 footer {
   text-align: center;
@@ -253,9 +271,15 @@ a {
   align-items: center;
 }
 
+/* Giver lilla farve ved hover på links */
 .nav-link:hover {
   transition: 0.7s ease;
   color: var(--accent_light_mode_color);
+}
+/* Giver grøn farve ved hover på links */
+.dark .nav-link:hover {
+  transition: 0.7s ease;
+  color: var(--accent_dark_mode_color);
 }
 
 .hamburger {
@@ -369,6 +393,11 @@ a {
     grid-column: 1 / 3;
     gap: 5px;
   }
+  /* Flytter teksten på temaside under billede grid */
+  .tema_01_txt {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
 }
 
 /* DARK MODE */
@@ -381,6 +410,20 @@ body {
 body.dark {
   color: white;
   background-color: var(--primary_dark_mode_color);
+}
+
+/* Skifter farven på tekstboksen */
+body.dark .tema_txt_boks_farve {
+  background-color: var(--accent_dark_mode_color);
+  color: var(--primary_dark_mode_color);
+}
+
+/* skifter farve på p og h2 */
+body.dark .tema_txt_boks_farve h2 {
+  color: var(--primary_dark_mode_color);
+}
+.dark.tema_txt_boks_p {
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 header.dark {
