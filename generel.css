@@ -50,7 +50,7 @@ img {
 /* FOOTER */
 footer {
   text-align: center;
-  color: white;
+  color: var(--primary_dark_mode_color);
   font-family: "modesto-condensed";
   text-transform: uppercase;
   letter-spacing: 0.8rem;
@@ -58,6 +58,11 @@ footer {
   top: 100vh;
   padding-top: 4vw;
 }
+
+footer.dark {
+  color: var(--primary_light_mode_color);
+}
+
 footer p {
   max-width: none;
 }
