@@ -47,6 +47,21 @@ img {
   grid-column: 1 / span 2;
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  color: white;
+  font-family: "modesto-condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  position: sticky;
+  top: 100vh;
+  padding-top: 4vw;
+}
+footer p {
+  max-width: none;
+}
+
 /* FONT */
 h1 {
   font-size: 4rem;
