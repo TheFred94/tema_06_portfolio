@@ -226,7 +226,7 @@ header.active.dark {
 }
 
 .mode:hover {
-  transition: var(--transition_1s) ease-in-out;
+  transition: var(--transition_1s);
   background: var(--accent_light_mode_color);
   color: #fff;
   text-decoration: none;
@@ -251,7 +251,7 @@ header.active.dark {
 }
 
 .dark .mode:hover {
-  transition: var(--transition_1s) ease-in-out;
+  transition: var(--transition_1s);
   background: var(--accent_dark_mode_color);
   color: white;
 }
