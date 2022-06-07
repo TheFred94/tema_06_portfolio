@@ -220,6 +220,7 @@ img {
 }
 .tema_01_txt {
   grid-column: 1 / 2;
+  padding-inline: var(--txt_padding);
 }
 
 /* TEMA SIDE */
@@ -239,6 +240,10 @@ img {
 }
 .tema_txt_boks_farve h2 {
   color: var(--primary_light_mode_color);
+  padding-inline-start: var(--txt_padding);
+}
+.tema_txt_boks_farve p {
+  padding-inline: var(--txt_padding);
 }
 .tema_txt_boks_p {
   grid-template-columns: repeat(2, 1fr);
