@@ -64,8 +64,8 @@ img {
 }
 
 .forside_txt {
-  grid-row: 1 / 3;
-  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 /* PORTFOLIO SIDE*/
@@ -82,6 +82,13 @@ img {
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
+}
+.generel_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.overflow {
+  overflow: hidden;
 }
 /* tema 02 */
 .tema_02_grid {
@@ -117,6 +124,17 @@ img {
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
+}
+/* tilføjer hover funktion på h2 på PORTFOLIO SIDE */
+.hover_h2:hover {
+  transition: var(--transition_1s);
+  color: var(--accent_light_mode_color);
+  cursor: pointer;
+}
+.dark .hover_h2:hover {
+  transition: var(--transition_1s);
+  color: var(--accent_dark_mode_color);
+  cursor: pointer;
 }
 
 /* OM MIG SIDE */
