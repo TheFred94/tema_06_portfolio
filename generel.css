@@ -9,7 +9,7 @@ html {
   --transition_1s: 1s;
 
   --wrapperWidth: 50vw;
-  --gutter: 5px;
+  --gutter: 2px;
   --noOfColumns: 4;
   --rowHeight: calc((var(--wrapperWidth) - (3 * var(--gutter))) / 8);
 
