@@ -207,12 +207,13 @@ img {
 .om_mig_overskrift {
   grid-column: 1;
   padding-left: var(--txt_padding);
-  ======= .om_mig_txt {
-    padding-inline: var(--txt_padding);
-  }
-  .om_mig_overskrift {
-    padding-inline: var(--txt_padding);
-  }
+}
+
+.om_mig_txt {
+  padding-inline: var(--txt_padding);
+}
+.om_mig_overskrift {
+  padding-inline: var(--txt_padding);
 }
 
 /* Billede grid */
@@ -500,11 +501,12 @@ a {
   .tema_01_grid {
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-auto-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: var(--rowHeight);
     grid-column: 1 / 3;
     gap: 5px;
   }
+
   /* Flyttet tekst under billeder på PORTFOLIO side */
   .tema_txt {
     grid-column: 1 / 3;
