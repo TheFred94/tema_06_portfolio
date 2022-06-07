@@ -241,6 +241,9 @@ p {
 }
 
 /* BURGER MENU */
+.logo {
+  margin-inline-end: auto;
+}
 .logo img {
   text-align: center;
   cursor: pointer;
@@ -266,7 +269,6 @@ a {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 24px;
   color: transparent;
