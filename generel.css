@@ -83,7 +83,27 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
-.generel_grid img:hover {
+.tema_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.tema_02_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.tema_03_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.tema_04_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.tema_05_grid img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+}
+.tema_06_grid img:hover {
   transition: 1s ease-in-out;
   transform: scale(1.05);
 }
