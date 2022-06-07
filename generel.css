@@ -59,6 +59,16 @@ img {
   background-repeat: no-repeat;
 }
 
+.forside_txt h1 {
+  padding-inline-start: 7rem;
+}
+.forside_txt h3 {
+  padding-inline-start: 10rem;
+}
+.forside_txt h4 {
+  padding-inline-start: 13rem;
+}
+
 .forside {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
@@ -66,6 +76,7 @@ img {
 }
 
 .forside_txt {
+  padding-block-start: 4rem;
   grid-row: 2 / 3;
   grid-column: 2 / 4;
 }
@@ -295,6 +306,13 @@ h3 {
   font-weight: 300;
   color: var(--primary_dark_mode_color);
 }
+h4 {
+  font-size: 1rem;
+  font-family: "futura";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primary_dark_mode_color);
+}
 
 p {
   font-family: "montserrat";
@@ -505,6 +523,25 @@ a {
   h1 {
     font-size: 15vw;
   }
+  h3 {
+    font-size: 7vw;
+  }
+  h4 {
+    font-size: 5vw;
+  }
+  .forside_txt {
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+  }
+  .forside_txt h1 {
+    padding-inline-start: 1.5rem;
+  }
+  .forside_txt h3 {
+    padding-inline-start: 6rem;
+  }
+  .forside_txt h4 {
+    padding-inline-start: 6.5rem;
+  }
 }
 
 /* DARK MODE */
@@ -621,6 +658,12 @@ header.active.dark {
 }
 .dark h3 {
   font-size: 2rem;
+  font-family: "futura";
+
+  color: var(--primary_light_mode_color);
+}
+.dark h4 {
+  font-size: 1rem;
   font-family: "futura";
 
   color: var(--primary_light_mode_color);
