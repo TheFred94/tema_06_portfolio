@@ -79,7 +79,6 @@ img {
 /* tema 01 */
 .tema_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
@@ -113,35 +112,35 @@ img {
 /* tema 02 */
 .tema_02_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
 /* tema 03 */
 .tema_03_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
 /* tema 04 */
 .tema_04_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
 /* tema 05 */
 .tema_05_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
 /* tema 06 */
 .tema_06_grid {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / span 2;
 }
@@ -273,9 +272,16 @@ h2 {
   text-transform: uppercase;
   color: var(--primary_dark_mode_color);
 }
+h3 {
+  font-size: 2rem;
+  font-family: "futura";
+  font-weight: 300;
+  color: var(--primary_dark_mode_color);
+}
 
 p {
   font-family: "montserrat";
+  line-height: 2rem;
 }
 
 /* BURGER MENU */
@@ -443,11 +449,20 @@ a {
   /* Flytter teksten på temaside under billede grid */
   .tema_01_txt {
     grid-column: 1 / 3;
-    grid-row: 3;
+  }
+
+  /*  */
+  .tema_txt {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+  .tema_img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
 
   .tema_txt_boks_p {
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
   }
   .img-1 {
     grid-column: 1 / 5;
