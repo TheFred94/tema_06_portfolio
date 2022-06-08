@@ -408,6 +408,173 @@ a {
   background-color: var(--primary_dark_mode_color);
   border-radius: 10px;
 }
+/* DARK MODE */
+body {
+  background: white;
+  color: var(--primary_dark_mode_color);
+  transition: var(--transition_1s);
+}
+
+body.dark {
+  color: white;
+  background-color: var(--primary_dark_mode_color);
+}
+
+/* Skifter farven på tekstboksen */
+body.dark .tema_txt_boks_farve {
+  background-color: var(--accent_dark_mode_color);
+  color: var(--primary_dark_mode_color);
+}
+
+/* skifter farve på p og h2 */
+body.dark .tema_txt_boks_farve h2 {
+  color: var(--primary_dark_mode_color);
+}
+.dark.tema_txt_boks_p {
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+header.dark {
+  color: white;
+  background-color: transparent;
+  transition: var(--transition_1s);
+}
+
+header.active.dark {
+  color: white;
+  background-color: var(--primary_dark_mode_color);
+  transition: var(--transition_1s);
+}
+
+.dark .hamburger .bar {
+  background-color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+/* skifter fra lilla til grøn */
+.mode {
+  background: var(--dark_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s);
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+.mode:hover {
+  transition: var(--transition_1s);
+  background: var(--accent_light_mode_color);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skifter fra grøn til lilla */
+.mode.dark {
+  background: var(--light_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s) ease-in-out;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dark .mode:hover {
+  transition: var(--transition_1s);
+  background: var(--accent_dark_mode_color);
+  color: white;
+}
+.cta {
+  background: var(--dark_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s);
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+.cta:hover {
+  transition: var(--transition_1s);
+  background: var(--accent_light_mode_color);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skifter fra grøn til lilla */
+body.dark .tema_01_txt button {
+  background: var(--light_mode_gradient);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s) ease-in-out;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dark .cta:hover {
+  transition: var(--transition_1s);
+  background: var(--accent_dark_mode_color);
+  color: white;
+}
+
+/* Skifter farven på h1 og h2 ved tryk på Light/dark mode knap */
+.dark h1 {
+  font-size: 4rem;
+  font-family: "futura";
+  text-transform: uppercase;
+  background-image: var(--light_mode_gradient);
+  font-weight: 800;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark h2 {
+  font-size: 3rem;
+  font-family: "futura";
+  text-transform: uppercase;
+  color: var(--primary_light_mode_color);
+}
+.dark h3 {
+  font-size: 2rem;
+  font-family: "futura";
+  color: var(--primary_light_mode_color);
+}
+.dark h4 {
+  font-size: 1rem;
+  font-family: "futura";
+  color: var(--primary_light_mode_color);
+}
 
 /* MEDIA */
 @media (max-width: 768px) {
@@ -601,129 +768,4 @@ a {
     padding-inline-start: var(--txt_padding);
     font-size: 15vw;
   }
-}
-
-/* DARK MODE */
-body {
-  background: white;
-  color: var(--primary_dark_mode_color);
-  transition: var(--transition_1s);
-}
-
-body.dark {
-  color: white;
-  background-color: var(--primary_dark_mode_color);
-}
-
-/* Skifter farven på tekstboksen */
-body.dark .tema_txt_boks_farve {
-  background-color: var(--accent_dark_mode_color);
-  color: var(--primary_dark_mode_color);
-}
-
-/* skifter farve på p og h2 */
-body.dark .tema_txt_boks_farve h2 {
-  color: var(--primary_dark_mode_color);
-}
-.dark.tema_txt_boks_p {
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-header.dark {
-  color: white;
-  background-color: transparent;
-  transition: var(--transition_1s);
-}
-
-header.active.dark {
-  color: white;
-  background-color: var(--primary_dark_mode_color);
-  transition: var(--transition_1s);
-}
-
-.dark .hamburger .bar {
-  background-color: white;
-}
-
-.dark a {
-  color: white;
-}
-
-/* skifter fra lilla til grøn */
-.mode {
-  background: var(--dark_mode_gradient);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "montserrat";
-  font-weight: 800;
-  transition: var(--transition_1s);
-  color: white;
-  border-radius: 4px;
-  border-style: none;
-  display: block;
-  cursor: pointer;
-}
-
-.mode:hover {
-  transition: var(--transition_1s);
-  background: var(--accent_light_mode_color);
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Skifter fra grøn til lilla */
-.mode.dark {
-  background: var(--light_mode_gradient);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "montserrat";
-  font-weight: 800;
-  transition: var(--transition_1s) ease-in-out;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 4px;
-  border-style: none;
-  display: block;
-  cursor: pointer;
-}
-
-.dark .mode:hover {
-  transition: var(--transition_1s);
-  background: var(--accent_dark_mode_color);
-  color: white;
-}
-
-/* Skifter farven på h1 og h2 ved tryk på Light/dark mode knap */
-.dark h1 {
-  font-size: 4rem;
-  font-family: "futura";
-  text-transform: uppercase;
-  background-image: var(--light_mode_gradient);
-  font-weight: 800;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.dark h2 {
-  font-size: 3rem;
-  font-family: "futura";
-  text-transform: uppercase;
-  color: var(--primary_light_mode_color);
-}
-.dark h3 {
-  font-size: 2rem;
-  font-family: "futura";
-
-  color: var(--primary_light_mode_color);
-}
-.dark h4 {
-  font-size: 1rem;
-  font-family: "futura";
-
-  color: var(--primary_light_mode_color);
 }
