@@ -13,7 +13,7 @@ html {
   --wrapperWidth: 50vw;
   --gutter: 2px;
   --noOfColumns: 4;
-  --rowHeight: calc((var(--wrapperWidth) - (3 * var(--gutter))) / 8);
+  --rowHeight: calc((var(--wrapperWidth) - (4 * var(--gutter))) / 8);
 
   --ratioA: 1;
   --ratioB: 1;
@@ -668,8 +668,6 @@ body.dark .tema_01_txt button {
   .tema_01_grid {
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: var(--rowHeight);
     grid-column: 1 / 3;
     gap: 5px;
   }
