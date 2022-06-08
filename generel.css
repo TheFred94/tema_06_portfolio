@@ -504,7 +504,7 @@ header.active.dark {
 }
 .cta {
   background: var(--dark_mode_gradient);
-  margin: 10px;
+
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -527,7 +527,7 @@ header.active.dark {
 /* Skifter fra grøn til lilla */
 body.dark .tema_01_txt button {
   background: var(--light_mode_gradient);
-  margin: 10px;
+
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -543,7 +543,23 @@ body.dark .tema_01_txt button {
 }
 body.dark .om_mig_txt button {
   background: var(--light_mode_gradient);
-  margin: 10px;
+
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  font-weight: 800;
+  transition: var(--transition_1s) ease-in-out;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  display: block;
+  cursor: pointer;
+}
+body.dark .generel_grid button {
+  background: var(--light_mode_gradient);
+
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
