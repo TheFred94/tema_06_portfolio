@@ -8,7 +8,16 @@ html {
   --primary_light_mode_color: #e8e8e8;
   --transition_1s: 1s;
   --txt_padding: 1rem;
+
+  /* Variabler til billedegrid */
+  --wrapperWidth: 50vw;
+  --gutter: 2px;
+  --rowHeight: calc((var(--wrapperWidth) - (4 * var(--gutter))) / 8);
+
+  --ratioA: 1;
+  --ratioB: 1;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -272,6 +281,11 @@ img {
   grid-auto-rows: auto;
   grid-gap: 10px;
   aspect-ratio: 1/1;
+}
+.tema_01_grid img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 .tema_txt_boks_farve {
   display: grid;
