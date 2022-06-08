@@ -8,14 +8,6 @@ html {
   --primary_light_mode_color: #e8e8e8;
   --transition_1s: 1s;
   --txt_padding: 1rem;
-
-  /* Variabler til billedegrid */
-  --wrapperWidth: 50vw;
-  --gutter: 2px;
-  --rowHeight: calc((var(--wrapperWidth) - (4 * var(--gutter))) / 8);
-
-  --ratioA: 1;
-  --ratioB: 1;
 }
 
 * {
@@ -52,7 +44,6 @@ img {
   display: flex;
   justify-content: center;
   grid-column: 1 / 3;
-  padding-block-start: 3rem;
 }
 
 .fremtilbage a {
@@ -114,6 +105,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+.generel_grid a button {
+  margin-block-start: 3rem;
 }
 
 .tema_txt {
