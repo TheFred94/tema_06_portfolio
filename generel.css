@@ -12,7 +12,6 @@ html {
   /* Variabler til billedegrid */
   --wrapperWidth: 50vw;
   --gutter: 2px;
-  --noOfColumns: 4;
   --rowHeight: calc((var(--wrapperWidth) - (4 * var(--gutter))) / 8);
 
   --ratioA: 1;
@@ -34,7 +33,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .om_mig_img {
@@ -218,9 +217,9 @@ img {
 
 /* Billede grid */
 .tema_01_grid img {
-  object-fit: fill;
-  align-self: stretch;
+  max-height: 100%;
   max-width: 100%;
+  object-fit: cover;
 }
 .img-1 {
   grid-column: 1 / 5;
