@@ -25,7 +25,7 @@ html {
 }
 
 main {
-  margin: 0 auto;
+  margin-inline: auto;
   max-width: 1200px;
 }
 
@@ -218,9 +218,9 @@ img {
 
 /* Billede grid */
 .tema_01_grid img {
-  max-height: 100%;
+  object-fit: fill;
+  align-self: stretch;
   max-width: 100%;
-  object-fit: cover;
 }
 .img-1 {
   grid-column: 1 / 5;
