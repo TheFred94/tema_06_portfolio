@@ -369,7 +369,6 @@ h1 {
   -webkit-background: var(--dark_mode_gradient);
   background-clip: text;
   font-weight: 800;
-  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -869,6 +868,7 @@ body.dark .generel_grid button {
     font-size: 5vw;
   }
   h1 {
+    color: var(--accent_light_mode_color);
     padding-inline-start: var(--txt_padding);
     font-size: 15vw;
   }
