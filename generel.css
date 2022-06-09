@@ -366,11 +366,11 @@ h1 {
   font-family: "futura";
   text-transform: uppercase;
   background: var(--dark_mode_gradient);
-  -webkit-background: var(--dark_mode_gradient);
+  -webkit-background: var(--accent_light_mode_color);
   background-clip: text;
   font-weight: 800;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: var(--accent_light_mode_color);
 }
 
 h2 {
@@ -868,7 +868,7 @@ body.dark .generel_grid button {
     font-size: 5vw;
   }
   h1 {
-    color: var(--accent_light_mode_color);
+    color: green;
     padding-inline-start: var(--txt_padding);
     font-size: 15vw;
   }
