@@ -120,7 +120,8 @@ img {
   gap: 10px;
 }
 .generel_grid a button {
-  margin-block-start: 3rem;
+  margin-block-start: 1.5rem;
+  margin-block-end: 3rem;
 }
 
 .tema_txt {
@@ -240,6 +241,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   padding-block: 3rem;
+  margin-block-start: 2rem;
 }
 
 .icon {
