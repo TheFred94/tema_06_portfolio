@@ -370,7 +370,7 @@ h1 {
   background-clip: text;
   font-weight: 800;
   background-clip: text;
-  -webkit-text-fill-color: var(--accent_light_mode_color);
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -679,6 +679,14 @@ body.dark .generel_grid button {
     font-size: 4vw;
   }
 }
+@media (max-width: 1367px) {
+  .forside_txt h1 {
+    -webkit-text-fill-color: var(--accent_light_mode_color);
+  }
+  .dark .forside_txt h1 {
+    -webkit-text-fill-color: var(--accent_dark_mode_color);
+  }
+}
 
 @media (max-width: 768px) {
   .hamburger {
@@ -838,6 +846,7 @@ body.dark .generel_grid button {
     font-size: 5vw;
   }
   .forside_txt h1 {
+    -webkit-text-fill-color: var(--accent_light_mode_color);
     font-size: 15vw;
   }
   .forside_txt h4 {
@@ -849,6 +858,7 @@ body.dark .generel_grid button {
     font-size: 5vw;
   }
   .dark .forside_txt h1 {
+    -webkit-text-fill-color: var(--accent_dark_mode_color);
     font-size: 15vw;
   }
   .dark .forside_txt h4 {
@@ -868,7 +878,6 @@ body.dark .generel_grid button {
     font-size: 5vw;
   }
   h1 {
-    color: green;
     padding-inline-start: var(--txt_padding);
     font-size: 15vw;
   }
