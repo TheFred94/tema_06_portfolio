@@ -90,26 +90,26 @@ img {
 }
 .forside_txt h1 {
   display: flex;
-  align-self: center;
+  place-content: center;
   padding-inline-start: 0;
 }
 
 .forside_txt h4 {
   display: flex;
-  align-self: center;
+  place-content: center;
 }
 .dark .forside_txt h3 {
   display: flex;
-  align-self: center;
+  place-content: center;
 }
 .dark .forside_txt h1 {
   display: flex;
-  align-self: center;
+  place-content: center;
   padding-inline-start: 0;
 }
 .dark .forside_txt h4 {
   display: flex;
-  align-self: center;
+  place-content: center;
 }
 
 /* PORTFOLIO SIDE*/
@@ -394,6 +394,7 @@ h4 {
 
 p {
   font-family: "montserrat";
+  max-width: 60ch;
   line-height: 2rem;
   font-size: var(--p-size);
 }
