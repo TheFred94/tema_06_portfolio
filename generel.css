@@ -369,6 +369,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   background: var(--dark_mode_gradient);
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 h3 {
