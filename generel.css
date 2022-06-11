@@ -365,18 +365,12 @@ h1 {
   font-size: var(--h1-size);
   font-family: "futura";
   text-transform: uppercase;
-  background-clip: text;
   font-weight: 800;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background: var(--dark_mode_gradient);
+  background-clip: text;
 }
 
-h2 {
-  font-size: var(--h2-size);
-  font-family: "futura";
-  text-transform: uppercase;
-  color: var(--primary_dark_mode_color);
-}
 h3 {
   font-size: var(--h3-size);
   font-family: "futura";
