@@ -365,8 +365,6 @@ h1 {
   font-size: var(--h1-size);
   font-family: "futura";
   text-transform: uppercase;
-  background: var(--dark_mode_gradient);
-  -webkit-background: var(--accent_light_mode_color);
   background-clip: text;
   font-weight: 800;
   background-clip: text;
@@ -387,6 +385,7 @@ h3 {
 }
 h4 {
   font-size: var(--h4-size);
+  font-family: "futura";
   font-weight: 300;
   text-transform: uppercase;
   color: var(--primary_dark_mode_color);
