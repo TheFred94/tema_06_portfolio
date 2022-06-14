@@ -115,10 +115,10 @@ img {
 
 #pulse {
   animation-name: pulse_kf;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction: alter;
+  animation-timing-function: ease;
 }
 
 @keyframes pulse_kf {
@@ -126,7 +126,7 @@ img {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
