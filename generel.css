@@ -390,6 +390,7 @@ p {
   max-width: 60ch;
   line-height: 2rem;
   font-size: var(--p-size);
+  padding-block: var(--txt_padding);
 }
 ul {
   font-family: "montserrat";
@@ -778,7 +779,11 @@ body.dark .generel_grid button {
   }
 
   .tema_txt_boks_p {
+    padding-block-start: var(--txt_padding);
     grid-column: 1 / 3;
+  }
+  .tema_txt_boks_p p {
+    padding-block-start: var(--txt_padding);
   }
   .img-1 {
     grid-column: 1 / 5;
