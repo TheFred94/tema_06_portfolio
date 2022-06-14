@@ -27,6 +27,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 // Dark mode funktioner
 function darkMode() {
+  console.log(darkMode);
   body.classList.toggle("dark");
   mode.classList.toggle("dark");
   banner.classList.toggle("dark");
